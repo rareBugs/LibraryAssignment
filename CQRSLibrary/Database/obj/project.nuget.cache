@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "6ooB5Q45SLE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\moehe\\PersonalDocuments\\Programming\\CQRSLibrary\\Database\\Database.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\moehe\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
