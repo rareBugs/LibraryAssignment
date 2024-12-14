@@ -1,0 +1,681 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96BCF5E4-5495-4F07-AC6C-1BBC9DBD59BD}|Tests\\Tests.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\tests\\authortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96BCF5E4-5495-4F07-AC6C-1BBC9DBD59BD}|Tests\\Tests.csproj|solutionrelative:tests\\authortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1E5DE9-39FD-4D7A-BBF0-AAF5D24B36DE}|WebAPI\\WebAPI.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D1E5DE9-39FD-4D7A-BBF0-AAF5D24B36DE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45B3C3B8-3CFF-4F2E-AD40-D5AFBCC5FDF8}|Database\\Database.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\database\\databases\\fakedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45B3C3B8-3CFF-4F2E-AD40-D5AFBCC5FDF8}|Database\\Database.csproj|solutionrelative:database\\databases\\fakedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\users\\queries\\loginuser\\loginuserqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\users\\queries\\loginuser\\loginuserqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\users\\commands\\createuser\\addnewusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\users\\commands\\createuser\\addnewusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\dtos\\userdto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\dtos\\userdto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1BA12B8-240E-48A3-AA3E-729519BB18EB}|Domain\\Domain.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BA12B8-240E-48A3-AA3E-729519BB18EB}|Domain\\Domain.csproj|solutionrelative:domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45B3C3B8-3CFF-4F2E-AD40-D5AFBCC5FDF8}|Database\\Database.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\database\\databases\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45B3C3B8-3CFF-4F2E-AD40-D5AFBCC5FDF8}|Database\\Database.csproj|solutionrelative:database\\databases\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1E5DE9-39FD-4D7A-BBF0-AAF5D24B36DE}|WebAPI\\WebAPI.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1E5DE9-39FD-4D7A-BBF0-AAF5D24B36DE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\users\\queries\\getallusers\\getallusersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\users\\queries\\getallusers\\getallusersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1E5DE9-39FD-4D7A-BBF0-AAF5D24B36DE}|WebAPI\\WebAPI.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1E5DE9-39FD-4D7A-BBF0-AAF5D24B36DE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\authors\\queries\\getallauthors\\getallauthorsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\authors\\queries\\getallauthors\\getallauthorsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\authors\\commands\\createauthor\\createauthorcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\authors\\commands\\createauthor\\createauthorcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\books\\commands\\createbook\\createbookcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\books\\commands\\createbook\\createbookcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\books\\queries\\getallbooks\\getallbooksqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\books\\queries\\getallbooks\\getallbooksqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1E5DE9-39FD-4D7A-BBF0-AAF5D24B36DE}|WebAPI\\WebAPI.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\webapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1E5DE9-39FD-4D7A-BBF0-AAF5D24B36DE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1E5DE9-39FD-4D7A-BBF0-AAF5D24B36DE}|WebAPI\\WebAPI.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\webapi\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1E5DE9-39FD-4D7A-BBF0-AAF5D24B36DE}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\authors\\queries\\getauthorbyid\\getauthorbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\authors\\queries\\getauthorbyid\\getauthorbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\authors\\commands\\updateauthor\\updateauthorcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\authors\\commands\\updateauthor\\updateauthorcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\authors\\commands\\deleteauthor\\deleteauthorcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\authors\\commands\\deleteauthor\\deleteauthorcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\books\\commands\\updatebook\\updatebookcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\books\\commands\\updatebook\\updatebookcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\books\\commands\\deletebook\\deletebookcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\books\\commands\\deletebook\\deletebookcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\books\\queries\\getbookbyid\\getbookbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\books\\queries\\getbookbyid\\getbookbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1BA12B8-240E-48A3-AA3E-729519BB18EB}|Domain\\Domain.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\domain\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BA12B8-240E-48A3-AA3E-729519BB18EB}|Domain\\Domain.csproj|solutionrelative:domain\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1BA12B8-240E-48A3-AA3E-729519BB18EB}|Domain\\Domain.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\domain\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1BA12B8-240E-48A3-AA3E-729519BB18EB}|Domain\\Domain.csproj|solutionrelative:domain\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\dtos\\bookdto\\updatebookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\dtos\\bookdto\\updatebookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\dtos\\bookdto\\createbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\dtos\\bookdto\\createbookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\dtos\\authordto\\updateauthordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\dtos\\authordto\\updateauthordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\dtos\\authordto\\createauthordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\dtos\\authordto\\createauthordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\books\\queries\\getallbooks\\getallbooksquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\books\\queries\\getallbooks\\getallbooksquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\books\\queries\\getbookbyid\\getbookbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\books\\queries\\getbookbyid\\getbookbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\books\\commands\\createbook\\createbookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\books\\commands\\createbook\\createbookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\books\\commands\\deletebook\\deletebookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\books\\commands\\deletebook\\deletebookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\books\\commands\\updatebook\\updatebookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\books\\commands\\updatebook\\updatebookcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\authors\\commands\\createauthor\\createauthorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\authors\\commands\\createauthor\\createauthorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\authors\\commands\\deleteauthor\\deleteauthorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\authors\\commands\\deleteauthor\\deleteauthorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\authors\\commands\\updateauthor\\updateauthorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\authors\\commands\\updateauthor\\updateauthorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\authors\\queries\\getallauthors\\getallauthorsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\authors\\queries\\getallauthors\\getallauthorsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\application\\authors\\queries\\getauthorbyid\\getauthorbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC102635-4DA1-4015-8E43-01E5DF1669DB}|Application\\Application.csproj|solutionrelative:application\\authors\\queries\\getauthorbyid\\getauthorbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96BCF5E4-5495-4F07-AC6C-1BBC9DBD59BD}|Tests\\Tests.csproj|c:\\users\\moehe\\source\\repos\\cqrslibrary\\tests\\booktests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96BCF5E4-5495-4F07-AC6C-1BBC9DBD59BD}|Tests\\Tests.csproj|solutionrelative:tests\\booktests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\DTOs\\UserDTO\\UserDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\UserDTO\\UserDto.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\DTOs\\UserDTO\\UserDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\UserDTO\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:09:28.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\WebAPI\\appsettings.json",
+              "RelativeToolTip": "WebAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-10T00:22:22.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FakeDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Database\\Databases\\FakeDatabase.cs",
+              "RelativeDocumentMoniker": "Database\\Databases\\FakeDatabase.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Database\\Databases\\FakeDatabase.cs",
+              "RelativeToolTip": "Database\\Databases\\FakeDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:33:35.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Domain\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Domain\\Models\\User.cs",
+              "RelativeToolTip": "Domain\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:10:21.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddNewUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Users\\Commands\\CreateUser\\AddNewUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Users\\Commands\\CreateUser\\AddNewUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Users\\Commands\\CreateUser\\AddNewUserCommandHandler.cs",
+              "RelativeToolTip": "Application\\Users\\Commands\\CreateUser\\AddNewUserCommandHandler.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwBwAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:01:07.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthorTests.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Tests\\AuthorTests.cs",
+              "RelativeDocumentMoniker": "Tests\\AuthorTests.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Tests\\AuthorTests.cs",
+              "RelativeToolTip": "Tests\\AuthorTests.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAYwCQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:32:05.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateBookCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Commands\\CreateBook\\CreateBookCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Books\\Commands\\CreateBook\\CreateBookCommandHandler.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Commands\\CreateBook\\CreateBookCommandHandler.cs",
+              "RelativeToolTip": "Application\\Books\\Commands\\CreateBook\\CreateBookCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:04:02.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Database\\Databases\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Database\\Databases\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Database\\Databases\\DependencyInjection.cs",
+              "RelativeToolTip": "Database\\Databases\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:33:34.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginUserQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Users\\Queries\\LoginUser\\LoginUserQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Users\\Queries\\LoginUser\\LoginUserQueryHandler.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Users\\Queries\\LoginUser\\LoginUserQueryHandler.cs",
+              "RelativeToolTip": "Application\\Users\\Queries\\LoginUser\\LoginUserQueryHandler.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBsAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:12:47.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CreateAuthorcommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Commands\\CreateAuthor\\CreateAuthorcommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Authors\\Commands\\CreateAuthor\\CreateAuthorcommandHandler.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Commands\\CreateAuthor\\CreateAuthorcommandHandler.cs",
+              "RelativeToolTip": "Application\\Authors\\Commands\\CreateAuthor\\CreateAuthorcommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:00:26.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetAllUsersQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Users\\Queries\\GetAllUsers\\GetAllUsersQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Users\\Queries\\GetAllUsers\\GetAllUsersQueryHandler.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Users\\Queries\\GetAllUsers\\GetAllUsersQueryHandler.cs",
+              "RelativeToolTip": "Application\\Users\\Queries\\GetAllUsers\\GetAllUsersQueryHandler.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwBsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:18:07.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:58:00.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetAllBooksQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Queries\\GetAllBooks\\GetAllBooksQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Books\\Queries\\GetAllBooks\\GetAllBooksQueryHandler.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Queries\\GetAllBooks\\GetAllBooksQueryHandler.cs",
+              "RelativeToolTip": "Application\\Books\\Queries\\GetAllBooks\\GetAllBooksQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:05:30.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\WebAPI\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\WebAPI\\Controllers\\BookController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\BookController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAwEgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:31:23.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthorController.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\WebAPI\\Controllers\\AuthorController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\AuthorController.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\WebAPI\\Controllers\\AuthorController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\AuthorController.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAwGkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:27:25.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GetAllAuthorsQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Queries\\GetAllAuthors\\GetAllAuthorsQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Authors\\Queries\\GetAllAuthors\\GetAllAuthorsQueryHandler.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Queries\\GetAllAuthors\\GetAllAuthorsQueryHandler.cs",
+              "RelativeToolTip": "Application\\Authors\\Queries\\GetAllAuthors\\GetAllAuthorsQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:02:51.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\WebAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\WebAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwCsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:57:38.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GetAuthorByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Queries\\GetAuthorById\\GetAuthorByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Authors\\Queries\\GetAuthorById\\GetAuthorByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Queries\\GetAuthorById\\GetAuthorByIdQueryHandler.cs",
+              "RelativeToolTip": "Application\\Authors\\Queries\\GetAuthorById\\GetAuthorByIdQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:03:00.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UpdateAuthorCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Commands\\UpdateAuthor\\UpdateAuthorCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Authors\\Commands\\UpdateAuthor\\UpdateAuthorCommandHandler.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Commands\\UpdateAuthor\\UpdateAuthorCommandHandler.cs",
+              "RelativeToolTip": "Application\\Authors\\Commands\\UpdateAuthor\\UpdateAuthorCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:02:36.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DeleteAuthorCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Commands\\DeleteAuthor\\DeleteAuthorCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Authors\\Commands\\DeleteAuthor\\DeleteAuthorCommandHandler.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Commands\\DeleteAuthor\\DeleteAuthorCommandHandler.cs",
+              "RelativeToolTip": "Application\\Authors\\Commands\\DeleteAuthor\\DeleteAuthorCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:14:16.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UpdateBookCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Commands\\UpdateBook\\UpdateBookCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Books\\Commands\\UpdateBook\\UpdateBookCommandHandler.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Commands\\UpdateBook\\UpdateBookCommandHandler.cs",
+              "RelativeToolTip": "Application\\Books\\Commands\\UpdateBook\\UpdateBookCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:04:27.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DeleteBookCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Commands\\DeleteBook\\DeleteBookCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Books\\Commands\\DeleteBook\\DeleteBookCommandHandler.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Commands\\DeleteBook\\DeleteBookCommandHandler.cs",
+              "RelativeToolTip": "Application\\Books\\Commands\\DeleteBook\\DeleteBookCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:14:26.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GetBookByIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Queries\\GetBookById\\GetBookByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Books\\Queries\\GetBookById\\GetBookByIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Queries\\GetBookById\\GetBookByIdQueryHandler.cs",
+              "RelativeToolTip": "Application\\Books\\Queries\\GetBookById\\GetBookByIdQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:06:03.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Domain\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Domain\\Models\\Book.cs",
+              "RelativeToolTip": "Domain\\Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:10:16.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Domain\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Author.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Domain\\Models\\Author.cs",
+              "RelativeToolTip": "Domain\\Models\\Author.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:10:04.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\DependencyInjection.cs",
+              "RelativeToolTip": "Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:09:39.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UpdateBookDto.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\DTOs\\BookDTO\\UpdateBookDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\BookDTO\\UpdateBookDto.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\DTOs\\BookDTO\\UpdateBookDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\BookDTO\\UpdateBookDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:09:20.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CreateBookDto.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\DTOs\\BookDTO\\CreateBookDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\BookDTO\\CreateBookDto.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\DTOs\\BookDTO\\CreateBookDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\BookDTO\\CreateBookDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:09:08.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UpdateAuthorDto.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\DTOs\\AuthorDTO\\UpdateAuthorDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\AuthorDTO\\UpdateAuthorDto.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\DTOs\\AuthorDTO\\UpdateAuthorDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\AuthorDTO\\UpdateAuthorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:08:57.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "GetAllBooksQuery.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Queries\\GetAllBooks\\GetAllBooksQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Books\\Queries\\GetAllBooks\\GetAllBooksQuery.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Queries\\GetAllBooks\\GetAllBooksQuery.cs",
+              "RelativeToolTip": "Application\\Books\\Queries\\GetAllBooks\\GetAllBooksQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:05:16.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CreateBookCommand.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Commands\\CreateBook\\CreateBookCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Books\\Commands\\CreateBook\\CreateBookCommand.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Commands\\CreateBook\\CreateBookCommand.cs",
+              "RelativeToolTip": "Application\\Books\\Commands\\CreateBook\\CreateBookCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:03:55.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DeleteBookCommand.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Commands\\DeleteBook\\DeleteBookCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Books\\Commands\\DeleteBook\\DeleteBookCommand.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Commands\\DeleteBook\\DeleteBookCommand.cs",
+              "RelativeToolTip": "Application\\Books\\Commands\\DeleteBook\\DeleteBookCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:24:43.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "GetBookByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Queries\\GetBookById\\GetBookByIdQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Books\\Queries\\GetBookById\\GetBookByIdQuery.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Queries\\GetBookById\\GetBookByIdQuery.cs",
+              "RelativeToolTip": "Application\\Books\\Queries\\GetBookById\\GetBookByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:05:58.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CreateAuthorDto.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\DTOs\\AuthorDTO\\CreateAuthorDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\AuthorDTO\\CreateAuthorDto.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\DTOs\\AuthorDTO\\CreateAuthorDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\AuthorDTO\\CreateAuthorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:13:56.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UpdateBookCommand.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Commands\\UpdateBook\\UpdateBookCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Books\\Commands\\UpdateBook\\UpdateBookCommand.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Books\\Commands\\UpdateBook\\UpdateBookCommand.cs",
+              "RelativeToolTip": "Application\\Books\\Commands\\UpdateBook\\UpdateBookCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:04:15.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DeleteAuthorCommand.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Commands\\DeleteAuthor\\DeleteAuthorCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Authors\\Commands\\DeleteAuthor\\DeleteAuthorCommand.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Commands\\DeleteAuthor\\DeleteAuthorCommand.cs",
+              "RelativeToolTip": "Application\\Authors\\Commands\\DeleteAuthor\\DeleteAuthorCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:01:52.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UpdateAuthorCommand.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Commands\\UpdateAuthor\\UpdateAuthorCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Authors\\Commands\\UpdateAuthor\\UpdateAuthorCommand.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Commands\\UpdateAuthor\\UpdateAuthorCommand.cs",
+              "RelativeToolTip": "Application\\Authors\\Commands\\UpdateAuthor\\UpdateAuthorCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:02:33.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "GetAllAuthorsQuery.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Queries\\GetAllAuthors\\GetAllAuthorsQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Authors\\Queries\\GetAllAuthors\\GetAllAuthorsQuery.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Queries\\GetAllAuthors\\GetAllAuthorsQuery.cs",
+              "RelativeToolTip": "Application\\Authors\\Queries\\GetAllAuthors\\GetAllAuthorsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:02:47.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CreateAuthorCommand.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Commands\\CreateAuthor\\CreateAuthorCommand.cs",
+              "RelativeDocumentMoniker": "Application\\Authors\\Commands\\CreateAuthor\\CreateAuthorCommand.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Commands\\CreateAuthor\\CreateAuthorCommand.cs",
+              "RelativeToolTip": "Application\\Authors\\Commands\\CreateAuthor\\CreateAuthorCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:12:30.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "GetAuthorByIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Queries\\GetAuthorById\\GetAuthorByIdQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Authors\\Queries\\GetAuthorById\\GetAuthorByIdQuery.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Application\\Authors\\Queries\\GetAuthorById\\GetAuthorByIdQuery.cs",
+              "RelativeToolTip": "Application\\Authors\\Queries\\GetAuthorById\\GetAuthorByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T00:02:57.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "BookTests.cs",
+              "DocumentMoniker": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Tests\\BookTests.cs",
+              "RelativeDocumentMoniker": "Tests\\BookTests.cs",
+              "ToolTip": "C:\\Users\\moehe\\source\\repos\\CQRSLibrary\\Tests\\BookTests.cs",
+              "RelativeToolTip": "Tests\\BookTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T23:31:30.61Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
