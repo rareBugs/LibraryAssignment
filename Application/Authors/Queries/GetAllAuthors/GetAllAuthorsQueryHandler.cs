@@ -1,29 +1,34 @@
-﻿using Database.Databases;
-using Domain.Models;
+﻿using Domain.Models;
+using Domain.Repositories;
 using MediatR;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace Application.Authors.Queries.GetAllauthors
 {
-    public class GetAllAuthorsQueryHandler : IRequestHandler<GetAllAuthorsQuery, List<Author>>
+    public class GetAllAuthorsQueryHandler : IRequestHandler<GetAllAuthorsQuery, OperationResults< List<Author>>>
     {
-        FakeDatabase _fakeDatabase;
+        private readonly IGenericRepository<Author> _genericRepository;
+        private readonly IMemoryCache _memoryCache;
+        private const string cacheKey = "authors";
 
-        public GetAllAuthorsQueryHandler(FakeDatabase fakeDatabase)
+        public GetAllAuthorsQueryHandler(IGenericRepository<Author> genericRepository, IMemoryCache memoryCache)
         {
-            _fakeDatabase = fakeDatabase;
+            _genericRepository = genericRepository;
+            _memoryCache = memoryCache;
         }
 
-        public Task<List<Author>> Handle(GetAllAuthorsQuery request, CancellationToken cancellationToken)
+        public async Task<OperationResults<List<Author>>> Handle(GetAllAuthorsQuery request, CancellationToken cancellationToken)
         {
-            try
+            if (!_memoryCache.TryGetValue(cacheKey, out List<Author> allAuthors))
             {
-                return Task.FromResult(_fakeDatabase.Authors);
+                allAuthors = (await _genericRepository.GetAllAsync()).ToList();
+                _memoryCache.Set(cacheKey, allAuthors, TimeSpan.FromMinutes(30));
+
+                if (allAuthors == null || allAuthors.Count == 0)
+                    return OperationResults<List<Author>>.FailureResult("No authors found.");
             }
 
-            catch
-            {
-                throw new Exception("Authors not found");
-            }
+            return OperationResults<List<Author>>.SuccessResult(allAuthors);
         }
     }
 }

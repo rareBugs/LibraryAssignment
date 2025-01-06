@@ -1,28 +1,26 @@
-﻿using Database.Databases;
-using Domain.Models;
+﻿using Domain.Models;
+using Domain.Repositories;
 using MediatR;
 
 namespace Application.Books.Queries.GetAllBooks
 {
-    public class GetAllBooksQueryHandler : IRequestHandler<GetAllBooksQuery, List<Book>>
+    public class GetAllBooksQueryHandler : IRequestHandler<GetAllBooksQuery, OperationResults<List<Book>>>
     {
-        private readonly FakeDatabase _fakeDatabase;
+        private readonly IGenericRepository<Book> _genericRepository;
 
-        public GetAllBooksQueryHandler(FakeDatabase fakeDatabase)
+        public GetAllBooksQueryHandler(IGenericRepository<Book> genericRepository)
         {
-            _fakeDatabase = fakeDatabase;
+            _genericRepository = genericRepository;
         }
-        public Task<List<Book>> Handle(GetAllBooksQuery request, CancellationToken cancellationToken)
-        {
-            try
-            {
-                return Task.FromResult(_fakeDatabase.Books);
-            }
 
-            catch
-            {
-                throw new Exception("Books not found");
-            }
+        public async Task<OperationResults<List<Book>>> Handle(GetAllBooksQuery request, CancellationToken cancellationToken)
+        {
+            var books = await _genericRepository.GetAllAsync();
+
+            if (books == null || !books.Any())
+                return OperationResults<List<Book>>.FailureResult("Books not found.");
+
+            return OperationResults<List<Book>>.SuccessResult(books.ToList());
         }
     }
 }

@@ -1,43 +1,39 @@
-﻿using Database.Databases;
+﻿using Database.Authentication;
 using Domain.Models;
+using Domain.Repositories;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Users.Commands.CreateUser
 {
-    public class AddNewUserCommandHandler : IRequestHandler<AddNewUserCommand, User>
+    public class AddNewUserCommandHandler : IRequestHandler<AddNewUserCommand, OperationResults< User>>
     {
-        private readonly FakeDatabase _fakeDatabase;
+        private readonly IGenericRepository<User> _genericRepository;
+        private readonly ISecurityService _passwordService;
 
-        public AddNewUserCommandHandler(FakeDatabase fakeDatabase)
+        public AddNewUserCommandHandler(IGenericRepository<User> genericRepository, ISecurityService passwordService)
         {
-            _fakeDatabase = fakeDatabase;
+            _genericRepository = genericRepository;
+            _passwordService = passwordService;
         }
 
-        public Task<User> Handle(AddNewUserCommand request, CancellationToken cancellationToken)
+        public async Task<OperationResults<User>> Handle(AddNewUserCommand request, CancellationToken cancellationToken)
         {
-            try
+            if (string.IsNullOrWhiteSpace(request.UserDto.UserName) || string.IsNullOrWhiteSpace(request.UserDto.Password))
             {
-                User userToCreate = new User
-                {
-                    Id = Guid.NewGuid(),
-                    UserName = request.UserDto.UserName,
-                    Password = request.UserDto.Password
-                };
-                _fakeDatabase.Users.Add(userToCreate);
-                return Task.FromResult(userToCreate);
+                return OperationResults<User>.FailureResult("Username and password are required");
             }
 
-            catch
+            string passwordHash = _passwordService.HashPassword(request.UserDto.Password);
+
+            User userToCreate = new User
             {
-                throw new Exception("User not added");
-            }
+                Id = Guid.NewGuid(),
+                UserName = request.UserDto.UserName,
+                Password = passwordHash
+            };
+            await _genericRepository.AddAsync(userToCreate);
+            return OperationResults<User>.SuccessResult(userToCreate);
+
         }
-
-
     }
 }

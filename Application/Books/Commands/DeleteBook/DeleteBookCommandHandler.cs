@@ -1,25 +1,36 @@
-﻿using Database.Databases;
-using Domain.Models;
+﻿using Domain.Models;
+using Domain.Repositories;
 using MediatR;
 
 namespace Application.Books.Commands.DeleteBook
 {
-    public class DeleteBookCommandHandler : IRequestHandler<DeleteBookCommand, Book>
+    public class DeleteBookCommandHandler : IRequestHandler<DeleteBookCommand, OperationResults<Book>>
     {
-        private readonly FakeDatabase _fakeDatabase;
-        public DeleteBookCommandHandler(FakeDatabase fakeDatabase)
+        private readonly IGenericRepository<Book> _bookRepository;
+
+        public DeleteBookCommandHandler(IGenericRepository<Book> bookRepository)
         {
-            _fakeDatabase = fakeDatabase;
+            _bookRepository = bookRepository;
         }
 
-        public Task<Book> Handle(DeleteBookCommand request, CancellationToken cancellationToken)
+        public async Task<OperationResults<Book>> Handle(DeleteBookCommand request, CancellationToken cancellationToken)
         {
-            var bookToDelete = _fakeDatabase.Books.FirstOrDefault(x => x.Id == request.BookId);
-            if (bookToDelete == null)
-                throw new Exception($"Book not found {request.BookId}");
-            
-            _fakeDatabase.Books.Remove(bookToDelete);
-            return Task.FromResult(bookToDelete);
+            try
+            {
+                var bookToDelete = await _bookRepository.GetByIdAsync(request.BookId);
+
+                if (bookToDelete == null)
+                    return OperationResults<Book>.FailureResult("Book not found.");
+
+                await _bookRepository.DeleteAsync(bookToDelete);
+
+                return OperationResults<Book>.SuccessResult(bookToDelete);
+            }
+
+            catch (Exception ex)
+            {
+                return OperationResults<Book>.FailureResult("An error occurred while deleting the book.");
+            }
         }
     }
 }

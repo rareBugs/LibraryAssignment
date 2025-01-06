@@ -4,20 +4,15 @@ using MediatR;
 
 namespace Application.Authors.Commands.CreateAuthor
 {
-    public class CreateAuthorCommand : IRequest<Author>
+    public class CreateAuthorCommand : IRequest<OperationResults<Author>>
     {
-        private CreateAuthorDto createAuthorDto;
-
-        public CreateAuthorCommand(Author authorToAdd)
-        {
-            NewAuthor = authorToAdd;
-        }
-
-        public CreateAuthorCommand(CreateAuthorDto createAuthorDto)
-        {
-            this.createAuthorDto = createAuthorDto;
-        }
-
         public Author NewAuthor { get; }
+
+        public CreateAuthorDto CreateAuthorDto;
+
+        public CreateAuthorCommand(CreateAuthorDto craeteAuthor)
+        {
+            CreateAuthorDto = craeteAuthor;
+        }        
     }
 }

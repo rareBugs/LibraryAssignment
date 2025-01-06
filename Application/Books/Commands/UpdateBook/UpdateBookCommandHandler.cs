@@ -1,26 +1,39 @@
-﻿using Database.Databases;
-using Domain.Models;
+﻿using Domain.Models;
+using Domain.Repositories;
 using MediatR;
 
 namespace Application.Books.Commands.UpdateBook
 {
-    public class UpdateBookCommandHandler : IRequestHandler<UpdateBookCommand, Book>
+    public class UpdateBookCommandHandler : IRequestHandler<UpdateBookCommand, OperationResults<Book>>
     {
-        FakeDatabase _fakeDatabase;
+        private readonly IGenericRepository<Book> _genericRepository;
 
-        public UpdateBookCommandHandler(FakeDatabase fakeDatabase)
+        public UpdateBookCommandHandler(IGenericRepository<Book> genericRepository)
         {
-            _fakeDatabase = fakeDatabase;
+            _genericRepository = genericRepository;
         }
-        public Task<Book> Handle(UpdateBookCommand request, CancellationToken cancellationToken)
+
+        public async Task<OperationResults<Book>> Handle(UpdateBookCommand request, CancellationToken cancellationToken)
         {
-            var bookToUpdate = _fakeDatabase.Books.FirstOrDefault(x => x.Id == request.BookId);
-            if (bookToUpdate == null)
-                throw new Exception($"Book not found {request.BookId}");
-            
-            bookToUpdate.Title = request.UpdateBookDto.Title;
-            bookToUpdate.Description = request.UpdateBookDto.Description;
-            return Task.FromResult(bookToUpdate);
+            try
+            {
+                var booktoUpdate = await _genericRepository.GetByIdAsync(request.BookId);
+
+                if (booktoUpdate == null)
+                    return OperationResults<Book>.FailureResult("Book not found.");
+
+                booktoUpdate.Title = request.UpdateBookDto.Title;
+                booktoUpdate.Description = request.UpdateBookDto.Description;
+
+                await _genericRepository.UpdateAsync(booktoUpdate);
+
+                return OperationResults<Book>.SuccessResult(booktoUpdate);
+            }
+
+            catch (Exception ex)
+            {
+                return OperationResults<Book>.FailureResult("Error while updating book.");
+            }
         }
     }
 }

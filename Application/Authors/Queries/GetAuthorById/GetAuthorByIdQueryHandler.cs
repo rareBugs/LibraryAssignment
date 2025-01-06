@@ -1,25 +1,26 @@
-﻿using Database.Databases;
-using Domain.Models;
+﻿using Domain.Models;
+using Domain.Repositories;
 using MediatR;
 
 namespace Application.Authors.Queries.GetAuthorById
 {
-    public class GetAuthorByIdQueryHandler : IRequestHandler<GetAuthorByIdQuery, Author>
+    public class GetAuthorByIdQueryHandler : IRequestHandler<GetAuthorByIdQuery, OperationResults<Author>>
     {
-        private readonly FakeDatabase _fakeDatabase;
+        private readonly IGenericRepository<Author> _genericRepository;
 
-        public GetAuthorByIdQueryHandler(FakeDatabase fakeDatabase)
+        public GetAuthorByIdQueryHandler(IGenericRepository<Author> genericRepository)
         {
-            _fakeDatabase = fakeDatabase;
+            _genericRepository = genericRepository;
         }
 
-        public Task<Author> Handle(GetAuthorByIdQuery request, CancellationToken cancellationToken)
+        public async Task<OperationResults<Author>> Handle(GetAuthorByIdQuery request, CancellationToken cancellationToken)
         {
-            var foundAuthor = _fakeDatabase.Authors.FirstOrDefault(author => author.Id == request.AuthorId);
+            var foundAuthor = await _genericRepository.GetByIdAsync(request.AuthorId);
+
             if (foundAuthor == null)
-                throw new Exception($"Author not found {request.AuthorId}");
+                return OperationResults<Author>.FailureResult("Author not found.");
             
-            return Task.FromResult(foundAuthor);
+            return OperationResults<Author>.SuccessResult(foundAuthor);
         }
     }
 }

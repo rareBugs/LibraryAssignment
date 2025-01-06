@@ -1,27 +1,31 @@
-﻿using Database.Databases;
-using Domain.Models;
+﻿using Domain.Models;
+using Domain.Repositories;
 using MediatR;
 
 namespace Application.Authors.Commands.UpdateAuthor
 {
-    public class UpdateAuthorCommandHandler : IRequestHandler<UpdateAuthorCommand, Author>
+    public class UpdateAuthorCommandHandler : IRequestHandler<UpdateAuthorCommand, OperationResults <Author>>
     {
-        private readonly FakeDatabase _fakeDatabase;
+        private readonly IGenericRepository<Author> _genericRepository;
 
-        public UpdateAuthorCommandHandler(FakeDatabase fakeDatabase)
+        public UpdateAuthorCommandHandler(IGenericRepository<Author> genericRepository)
         {
-            _fakeDatabase = fakeDatabase;
+            _genericRepository = genericRepository;
         }
 
-        public Task<Author> Handle(UpdateAuthorCommand request, CancellationToken cancellationToken)
+        public async Task<OperationResults<Author>> Handle(UpdateAuthorCommand request, CancellationToken cancellationToken)
         {
-            var authorToUpdate = _fakeDatabase.Authors.FirstOrDefault(x => x.Id == request.AuthorId);
+            var authorToUpdate = await _genericRepository.GetByIdAsync(request.AuthorId);
+
             if (authorToUpdate == null)
-                throw new Exception("Author not found");
+                return OperationResults<Author>.FailureResult("Author not found.");
 
             authorToUpdate.FirstName = request.UpdateAuthorDto.FirstName;
             authorToUpdate.LastName = request.UpdateAuthorDto.LastName;
-            return Task.FromResult(authorToUpdate);
+
+            await _genericRepository.UpdateAsync(authorToUpdate);
+
+            return OperationResults<Author>.SuccessResult(authorToUpdate);
         }
     }
 }

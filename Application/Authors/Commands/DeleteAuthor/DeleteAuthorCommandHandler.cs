@@ -1,27 +1,30 @@
 ﻿using Application.Authors.Commands.Commands.DeleteAuthor;
-using Database.Databases;
 using Domain.Models;
+using Domain.Repositories;
 using MediatR;
 
 namespace Application.Authors.Commands.DeleteAuthor
 {
-    public class DeleteAuthorCommandHandler : IRequestHandler<DeleteAuthorCommand, Author>
+    public class DeleteAuthorCommandHandler : IRequestHandler <DeleteAuthorCommand, OperationResults<Author>>
     {
-        private readonly FakeDatabase _fakeDatabase;
+        private readonly IGenericRepository<Author> _genericRepository;
 
-        public DeleteAuthorCommandHandler(FakeDatabase fakeDatabase)
+        public DeleteAuthorCommandHandler(IGenericRepository<Author> genericRepository)
         {
-            _fakeDatabase = fakeDatabase;
+            _genericRepository = genericRepository;
         }
 
-        public Task<Author> Handle(DeleteAuthorCommand request, CancellationToken cancellationToken)
+        public async Task<OperationResults<Author>> Handle(DeleteAuthorCommand request, CancellationToken cancellationToken)
         {
-            var authorToDelete = _fakeDatabase.Authors.FirstOrDefault(x => x.Id == request.AuthorId);
+            Author authorToDelete = await _genericRepository.GetByIdAsync(request.AuthorId);
+
             if (authorToDelete == null)
-                throw new Exception($"Author not found {request.AuthorId}");
+                return OperationResults<Author>.FailureResult("Author not found.");
             
-            _fakeDatabase.Authors.Remove(authorToDelete);
-            return Task.FromResult(authorToDelete);
+
+            await _genericRepository.DeleteAsync(authorToDelete);
+
+            return OperationResults<Author>.SuccessResult(authorToDelete);
         }
     }
 }

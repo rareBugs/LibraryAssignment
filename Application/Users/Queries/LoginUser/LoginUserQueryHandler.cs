@@ -1,40 +1,36 @@
 ﻿using Application.Users.Queries.LoginUser.Helpers;
-using Database.Databases;
+using Database.Authentication;
+using Domain.Models;
+using Domain.Repositories;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Users.Queries.LoginUser
 {
-    public class LoginUserqueryHandler : IRequestHandler<LoginUserQuery, string>
+    public class LoginUserqueryHandler : IRequestHandler<LoginUserQuery, OperationResults <string>>
     {
-        private readonly FakeDatabase _fakeDatabase;
+        private readonly IGenericRepository<User> _userRrepository;
+        private readonly ISecurityService _securityService;
         private readonly TokenHelper _tokenHelper;
-        public LoginUserqueryHandler(FakeDatabase fakeDatabase, TokenHelper tokenHelper)
+
+        public LoginUserqueryHandler(IGenericRepository<User> userRespository, ISecurityService securityService, TokenHelper tokenHelper)
         {
-            _fakeDatabase = fakeDatabase;
+            _userRrepository = userRespository;
+            _securityService = securityService;
             _tokenHelper = tokenHelper;
         }
 
-        public Task<string> Handle(LoginUserQuery request, CancellationToken cancellationToken)
+        public async Task<OperationResults<string>> Handle(LoginUserQuery request, CancellationToken cancellationToken)
         {
-            try
-            {
-                var user = _fakeDatabase.Users.FirstOrDefault(u => u.UserName == request.LoginUserDto.UserName && u.Password == request.LoginUserDto.Password);
-                if (user == null)
-                   throw new UnauthorizedAccessException("Invalid Username or Password");
+            var user = await _userRrepository.FindByAsync(u => u.UserName == request.LoginUserDto.UserName);
 
-                string token = _tokenHelper.GenerateJwtToken(user);
-                return Task.FromResult(token);
-            }
+            if (user == null || !_securityService.VerifyPassword(request.LoginUserDto.Password, user.Password))
+                return OperationResults<string>.FailureResult("Invalid username or password");
 
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
+
+            string token = _tokenHelper.GenerateJwtToken(user);
+
+            return OperationResults<string>.SuccessResult(token);
+
         }
     }
 }

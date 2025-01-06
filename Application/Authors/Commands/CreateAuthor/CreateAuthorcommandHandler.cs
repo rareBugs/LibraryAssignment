@@ -1,30 +1,30 @@
-﻿using Database.Databases;
-using Domain.Models;
+﻿using Domain.Models;
+using Domain.Repositories;
 using MediatR;
 
 namespace Application.Authors.Commands.CreateAuthor
 {
-    public class CreateAuthorcommandHandler : IRequestHandler<CreateAuthorCommand, Author>
+    public class CreateAuthorcommandHandler : IRequestHandler<CreateAuthorCommand, OperationResults<Author>>
     {
-        private readonly FakeDatabase _fakeDatabase;
+        private readonly IGenericRepository<Author> _genericRepository;
 
-        public CreateAuthorcommandHandler(FakeDatabase database)
+        public CreateAuthorcommandHandler(IGenericRepository<Author> genericRepository)
         {
-            _fakeDatabase = database;
+            _genericRepository = genericRepository;
         }
 
-        public async Task<Author> Handle(CreateAuthorCommand request, CancellationToken cancellationToken)
-        {
-            try
-            {
-                _fakeDatabase.Authors.Add(request.NewAuthor);
-                return await Task.FromResult(request.NewAuthor);
-            }
 
-            catch
-            {
-                throw new Exception("Failed adding author.");
-            }
+        public async Task<OperationResults<Author>> Handle(CreateAuthorCommand request, CancellationToken cancellationToken)
+        {
+            if (string.IsNullOrEmpty(request.CreateAuthorDto.FirstName) || string.IsNullOrEmpty(request.CreateAuthorDto.LastName))
+                return OperationResults<Author>.FailureResult("First or last name empty.");
+            
+
+            var newAuthor = new Author(request.CreateAuthorDto.FirstName, request.CreateAuthorDto.LastName);
+
+            await _genericRepository.AddAsync(newAuthor);
+
+            return OperationResults<Author>.SuccessResult(newAuthor);
         }
     }
 }

@@ -1,0 +1,28 @@
+# Ignore Visual Studio files
+.vs/
+
+# Ignore build and output folders
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+
+# Ignore log files and IDE cache
+*.log
+*.cache
+*.ide
+
+# Ignore other temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Node modules (if applicable)
+node_modules/
